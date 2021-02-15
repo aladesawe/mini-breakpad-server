@@ -2,6 +2,7 @@ bodyParser = require 'body-parser'
 methodOverride = require('method-override')
 path = require 'path'
 express = require 'express'
+(require 'dotenv').config { path: __dirname + './env' }
 reader = require './reader'
 saver = require './saver'
 Database = require './database'
